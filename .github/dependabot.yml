@@ -11,7 +11,6 @@ updates:
     versioning-strategy: increase
     registries:
       - npm-public
-    registry-fallback: true
     # # Disable version checks while keeping dependabot config
     # open-pull-requests-limit: 0
     # ignore:
