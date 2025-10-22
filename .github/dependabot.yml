@@ -1,4 +1,8 @@
 version: 2
+registries:
+  npm-public:
+    type: npm-registry
+    url: https://registry.npmjs.org
 updates:
   - package-ecosystem: "npm"
     directory: "/"
@@ -6,9 +10,7 @@ updates:
       interval: "daily"
     versioning-strategy: increase
     registries:
-      npm-public:
-        type: npm-registry
-        url: https://registry.npmjs.org
+      - npm-public
     registry-fallback: true
     # # Disable version checks while keeping dependabot config
     # open-pull-requests-limit: 0
